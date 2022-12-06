@@ -9,7 +9,7 @@ We want to secure the communication. There is the popular *ssh* command line uti
 
 This is where *tcptunnel* comes into play. On the client side it listens for UDP messages and sends them into the TCP tunnel. On the server side it listens for those TCP messages from the tunnel and forwards them via UDP. Answers will be sent in the opposite direction.
 
-# Usage
+## Usage
 Listen for UDP data and forward it to a TCP port:
 ```
 tcptunnel client <udp listen port> <tcp forward port>
@@ -19,7 +19,7 @@ Listen for TCP data and forward it to a UDP port:
 tcptunnel server <tcp listen port> <udp forward port>
 ```
 
-# Build
+## Build
 You can build the application yourself using the npm package *pkg*. From inside the root directory of the repository execute the following command.
 ```
 pkg .\src\index.js -t node18 -o tcptunnel.exe
