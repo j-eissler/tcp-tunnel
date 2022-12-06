@@ -1,5 +1,5 @@
-const net = require('node:net')
-const dgram = require('node:dgram')
+const net = require('net')
+const dgram = require('dgram')
 const log = require('./logging.js')
 
 class Server {
