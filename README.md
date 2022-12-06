@@ -20,7 +20,18 @@ tcptunnel server <tcp listen port> <udp forward port>
 ```
 
 ## Build
-You can build the application yourself using the npm package *pkg*. From inside the root directory of the repository execute the following command.
+You can build the application yourself using the npm package *pkg*. Install it globally.
+```
+npm install -g pkg
+```
+
+From inside the root directory of the repository you can build the program with one of the following commands.
+
+### Windows
 ```
 pkg .\src\index.js -t node18 -o tcptunnel.exe
+```
+### Linux
+```
+pkg src/index.js -t node18 -o tcptunnel
 ```
