@@ -18,3 +18,9 @@ Listen for TCP data and forward it to a UDP port:
 ```
 tcptunnel server <tcp listen port> <udp forward port>
 ```
+
+# Build
+You can build the application yourself using the npm package *pkg*. From inside the root directory of the repository execute the following command.
+```
+pkg .\src\index.js -t node18 -o tcptunnel.exe
+```
